@@ -1,0 +1,35 @@
+.thanks {
+    position: relative;
+    margin: 0 auto;
+        /* BOXの位置(中央寄せ)  */
+        height: 140px;
+        /* BOXの高さ            */
+        background: #fff;
+}
+
+
+.thanks__content {
+    margin: 0 auto;
+    padding: 30px 15px;
+    max-width: 1230px;
+}
+
+.thanks__heading {
+    margin-top: 50px;
+    text-align: center;
+    border: none;
+    color: #9A8A7C;
+    color: #fff;
+    cursor: pointer;
+}
+
+.form__button-home {
+    padding: 10px;
+    width: 15%;
+    height: 30px;
+    border: none;
+    background: #9A8A7C;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+}

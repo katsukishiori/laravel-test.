@@ -1,0 +1,172 @@
+
+.contact-form__content {
+    margin: 0 auto;
+    padding: 30px 15px;
+    max-width: 1230px;
+}
+
+.contact-form__heading {
+    margin-bottom: 50px;
+    text-align: center;
+    color:#9A8A7C;
+}
+
+.form {
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+}
+
+.form__group {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*****名前*****/
+.name-box {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.name-box .name {
+    width: 180px;
+    margin-left: 20px;
+}
+
+.form__tel--box .label {
+    width: 50px;
+}
+
+
+
+/*****性別*****/
+.radio-text {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .3em 2em;
+    border: none;
+}
+
+.radio-text label {
+    display: flex;
+    align-items: center;
+    gap: 0 .5em;
+    position: relative;
+    cursor: pointer;
+}
+
+.radio-text label::before,
+.radio-text label:has(:checked)::after {
+    border-radius: 50%;
+    content: '';
+}
+
+.radio-text label::before {
+    width: 18px;
+    height: 18px;
+    background-color: #e6edf3;
+}
+
+.radio-text label:has(:checked)::after {
+    position: absolute;
+    top: 50%;
+    left: 9px;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    background-color: #9A8A7C;
+}
+
+.radio-text input {
+    display: none;
+}
+
+
+/*****メールアドレス*****/
+.form__label--item {
+    color:#9A8A7C;
+}
+
+span.form__label--required {
+    padding: 4px 6px;
+    color: #ff0000;
+}
+
+.form__error {
+    height: 20px;
+    color: #ff0000;
+    text-align: left;
+}
+
+
+/*****お問い合わせの種類*****/
+.select-box {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    background-color: #baaa9c;
+}
+
+.select option {
+    color: #9A8A7C;
+}
+
+.select-box::after {
+    position: absolute;
+    right: 15px;
+    width: 10px;
+    height: 7px;
+    background-color: #9A8A7C;
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+    content: '';
+    pointer-events: none;
+}
+
+.select-box select {
+    appearance: none;
+    min-width: 300px;
+    height: 2.8em;
+    padding: .4em calc(.8em + 30px) .4em .8em;
+    border: none;
+    background-color: #f4f4f4;
+    color: #9A8A7C;
+    font-size: 1em;
+}
+
+
+
+/*****お問い合わせ内容*****/
+.form__input--text input,
+.form__input--textarea textarea {
+    padding: 10px;
+    width: 400px;
+    background-color: #f4f4f4;
+}
+
+.form__input--text input {
+    height: 40px;
+}
+
+.form__input--textarea textarea {
+    height: 180px;
+    border: none;
+}
+
+
+
+/*****確認画面ボタン*****/
+.form__button {
+    margin-top: 30px;
+}
+
+.form__button-submit {
+    padding: 10px;
+    width: 20%;
+    height: 30px;
+    border: none;
+    background: #9A8A7C;
+    color: #fff;
+    cursor: pointer;
+}
+
